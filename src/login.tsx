@@ -23,7 +23,7 @@ export const Login = () => {
                 setPassword(e.target.value)}}/>
                 
             </div>
-            <button type="submit" className="w-full mb-4 text-[18px] roundedbg-black-600 py-2 hover:bg-teal-800"onClick={handleLogin}>Submit</button>
+            <button type="submit" className="w-full mb-4 text-[18px] roundedbg-black-600 py-2 hover:bg-teal-800"onClick={handleLogin}>Login</button>
         </form>
     </div>
   )
