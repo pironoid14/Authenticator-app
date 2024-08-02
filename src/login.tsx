@@ -5,7 +5,9 @@ export const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = () => {};
+  const handleLogin = () => {
+    console.log();
+  };
   return (
     <div className="bg-black border border-black rounded-md shadow-lg backdrop-filter backdrop-blur-lg bg-opacity-40 relative">
         <h1 className="text-4xl font bold text-center">Login form</h1>
