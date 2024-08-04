@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 
 export const Login = () => {
   const [email, setEmail] = useState("");
@@ -26,6 +26,7 @@ export const Login = () => {
                 
             </div>
             <button type="submit" className="w-full mb-4 text-[18px] roundedbg-black-600 py-2 hover:bg-teal-800"onClick={handleLogin}>Login</button>
+            <Link to="Register">Do you have an Account Register</Link>
         </form>
     </div>
   )

@@ -1,5 +1,7 @@
 
-import { Login } from "./login";
+import  {Login}  from "./Pages/login";
+import {Register} from "./Pages/register";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
 
@@ -7,8 +9,12 @@ function App() {
 
   return (
     <>
-      <div className="text-black justify-center flex h-[100vh] items-center bg-gradient-to-b from-blue-700 via-teal-600 to-indigo-700">
-        <Login/>
+      <div className="text-black justify-center flex h-[100vh] items-center ">
+        <Routes>
+          <Route path="/login" element = {<Login/>}/>
+          <Route path="/register" element = {<Register/>}/>
+          <Route/>
+        </Routes>
       </div>
     </>
   )
