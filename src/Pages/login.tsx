@@ -22,7 +22,6 @@ export const Login = () => {
       setErrors(validationErrors);
     } else {
       setErrors({});
-      // Proceed with login logic
       console.log({ email, password });
     }
   };
