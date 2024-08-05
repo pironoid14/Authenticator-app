@@ -55,10 +55,11 @@ export const Register = () => {
           {errors.name && <p>{errors.name}</p>}
 
           <label htmlFor="">Phone Number</label>
-          <input type="number" name="" id="" className="rounded-md shadow-sm w-full border focus:outline-none focus:ring mt-1 focus:border-blue-500 px-3 py-2" value={number}
+          <input type="tel" name="" id="" className="rounded-md shadow-sm w-full border focus:outline-none focus:ring mt-1 focus:border-blue-500 px-3 py-2" value={number}
             onChange={(e) => setNumber(e.target.value)}
           />
           {errors.number && <p>{errors.number}</p>}
+          
 
           <label htmlFor="">Email</label>
           <input type="email" name="email" id="" className="rounded-md shadow-sm w-full border focus:outline-none focus:ring mt-1 focus:border-blue-500 px-3 py-2" value={email}

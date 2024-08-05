@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <div className="text-black justify-center flex h-[100vh] items-center ">
+      <div >
         
         <Routes>
           <Route path="/" element ={<Home/>}/>
