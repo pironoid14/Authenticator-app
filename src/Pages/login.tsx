@@ -28,7 +28,8 @@ export const Login = () => {
   return (
     <div className="text-black justify-center flex h-[100vh] items-center rounded-md">
     <div className="bg-white border border-black rounded-md shadow-lg backdrop-filter backdrop-blur-lg bg-opacity-40 relative">
-      <h1 className="text-4xl font bold text-center">Login form</h1>
+      <h1 className="text-4xl font bold text-center">MEW</h1>
+      <h3 className="text-4xl font bold text-center">Login Form</h3>
       <form action=""  onSubmit={handleLogin}>
         <div className="relative my-4">
           <label htmlFor="email" className="text-sm peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:translate-y-4 top-3">Email</label>
@@ -49,7 +50,7 @@ export const Login = () => {
         <div className="flex items-center justify-center">
         <button type="submit" className="bg-blue-700 rounded-lg px-4 py-2 w-full hover:bg-teal-800" onClick={handleLogin}>Login</button>
         </div>
-        <Link to="/register">Do you have an Account Register</Link>
+        <Link to="/register" className="text-sky-600">Do you have an Account Register</Link>
         <Link to = "/Home"></Link>
       </form>
       </div>
