@@ -27,12 +27,11 @@ export const Register = () => {
       setErrors(validationErrors);
     } else {
       setErrors({});
-      // Proceed with form submission
       console.log({ name, number, email, password });
     }
   };
   return (
-    <div className="bg-red-500 flex-col justify-center items-center">
+    <div className="bg-red-500 grid place-content-center">
       <h1>MEW</h1>
       <form action="" onSubmit={handleRegister}>
         <div>
