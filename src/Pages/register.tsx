@@ -40,43 +40,43 @@ export const Register = () => {
           <input type="text" name=""  className="rounded-md shadow-sm w-full border focus:outline-none focus:ring mt-1 focus:border-blue-500 px-3 py-2" value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          {errors.name && <p>{errors.name}</p>}
+          {errors.name && <p className="text-red-500">{errors.name}</p>}
 
           <label htmlFor="">Last Name</label>
           <input type="text" name="" className="rounded-md shadow-sm w-full border focus:outline-none focus:ring mt-1 focus:border-blue-500 px-3 py-2" value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          {errors.name && <p>{errors.name}</p>}
+          {errors.name && <p className="text-red-500">{errors.name}</p>}
 
           <label htmlFor="">Other Names</label>
           <input type="text" name="" className="rounded-md shadow-sm w-full border focus:outline-none focus:ring mt-1 focus:border-blue-500 px-3 py-2" value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          {errors.name && <p>{errors.name}</p>}
+          {errors.name && <p className="text-red-500">{errors.name}</p>}
 
           <label htmlFor="">Phone Number</label>
           <input type="tel" name="" id="" className="rounded-md shadow-sm w-full border focus:outline-none focus:ring mt-1 focus:border-blue-500 px-3 py-2" value={number}
             onChange={(e) => setNumber(e.target.value)}
           />
-          {errors.number && <p>{errors.number}</p>}
+          {errors.number && <p className="text-red-500">{errors.number}</p>}
           
 
           <label htmlFor="">Email</label>
           <input type="email" name="email" id="" className="rounded-md shadow-sm w-full border focus:outline-none focus:ring mt-1 focus:border-blue-500 px-3 py-2" value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          {errors.email && <p>{errors.email}</p>}
+          {errors.email && <p className="text-red-500">{errors.email}</p>}
 
           <label htmlFor="">Password</label>
           <input type="password" name="" id="" className="rounded-md shadow-sm w-full border focus:outline-none focus:ring mt-1 focus:border-blue-500 px-3 py-2" value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          {errors.password && <p>{errors.password}</p>}
+          {errors.password && <p className="text-red-500">{errors.password}</p>}
 
           <div>
             <LiaToggleOffSolid />
           </div>
-
+          <div></div>
           <button type="button" onClick={handleRegister} className=" bg-blue-700 rounded-lg px-4 py-2 hover:bg-stone-600 ">Register</button>
           <Link to="/login" className="text-blue-800">Already have an account? Login</Link>
          
