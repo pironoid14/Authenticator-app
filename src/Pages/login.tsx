@@ -26,12 +26,13 @@ export const Login = () => {
     }
   };
   return (
-    <div className="text-black justify-center flex h-[100vh] items-center rounded-md">
-    <div className="bg-white border border-black rounded-md shadow-lg backdrop-filter backdrop-blur-lg bg-opacity-40 relative">
-      <h1 className="text-4xl font bold text-center">MEW</h1>
-      <h3 className="text-4xl font bold text-center">Login Form</h3>
-      <form action=""  onSubmit={handleLogin}>
+    <div className="bg-amber-300 text-black justify-center flex h-[100vh] items-center rounded-md">
+    <div className=" border-black rounded-md shadow-lg backdrop-filter backdrop-blur-lg bg-opacity-40 relative">
+      
+      <form action=""  onSubmit={handleLogin} className="bg-white">
         <div className="relative my-4">
+        <h1 className="text-3xl font bold text-center">MEW</h1>
+        <h3 className="text-2xl font bold text-center">Login Form</h3>
           <label htmlFor="email" className="text-sm peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:translate-y-4 top-3">Email</label>
           <input type="email" className="block py-2.5 px-0 text-base text-black bg-transparent w-72 border-0 border-b-2 border-neutral-900"  name="email" value={email}
             onChange={(e) => setEmail(e.target.value)} />
