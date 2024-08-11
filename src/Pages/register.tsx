@@ -87,18 +87,7 @@ export const Register = () => {
       numInputs={6}
       renderSeparator={<span>-</span>}
       renderInput={(props) => <input {...props} />}
-       className="flex justify-center mt-2"
-              inputStyle={{
-                width: "3rem",
-                height: "3rem",
-                margin: "0 0.5rem",
-                fontSize: "1.5rem",
-                borderRadius: "0.5rem",
-                border: "1px solid rgba(0,0,0,0.3)"
-              }}
-              focusStyle={{
-                border: "1px solid #blue-700"
-              }}
+      
     />
      
           </div>
